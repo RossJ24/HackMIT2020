@@ -26912,7 +26912,7 @@ const crashData = {
   "driver_bearing": 182.0799,
   "continue_driving": false
 }
-router.get('/crashdata', function( res) {
+router.get('/crashdata', function(req, res) {
   res.status(200).send({crashdata: crashData});
 });
 
