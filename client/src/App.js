@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import axios from 'axios';
-import Swipeable from 'react-swipeable';
 import Severity from './components/Severity';
 import Narrative from './components/Narrative';
 import Weather from './components/Weather';
