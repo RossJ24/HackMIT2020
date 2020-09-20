@@ -1,12 +1,10 @@
 import React from 'react';
 import './App.css';
 import axios from 'axios';
-import Swipeable from 'react-swipeable';
 import Severity from './components/Severity';
 import Narrative from './components/Narrative';
 import Weather from './components/Weather';
 import Board from './components/Board';
-import CardWrapper from './components/CardWrapper';
 
 class App extends React.Component {
 
@@ -32,7 +30,7 @@ class App extends React.Component {
           <Board>
             <Severity score={severity} />
             <Narrative story={narrative} />
-            <Weather obsTime={weather.observation_time} />
+            <Weather weather={weather} />
           </Board>
         </div>
       </>);
