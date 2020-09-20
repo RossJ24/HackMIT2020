@@ -14,7 +14,12 @@ transform: ${props => {
 export const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
-  transition: ${props => (props.sliding ? "none" : "transform 1s ease")};
+  transition: ${props => "transform 3s ease"};
+  transform: ${props => {
+    if (!props.sliding) return "translateY(0)";
+    if (props.dir === PREV) return "translateY(-100vh)";
+    return "translateY(100vh)";
+  }};
 `;
 
 export const Wrapper = styled.div`
