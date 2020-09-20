@@ -6,7 +6,7 @@ class Severity extends React.Component {
         return(<>
             <div>
                 <p>Your calculated Severity score was...</p>
-                <h1>{this.props.score}</h1>
+                <h1 id="severity">{this.props.score}</h1>
             </div>
         </>);
     }

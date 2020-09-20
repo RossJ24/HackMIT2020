@@ -5,7 +5,9 @@ class Narrative extends React.Component {
     render() {
         return (
             <div>
-                <p>{this.props.story}</p>
+                <div>
+                    <p>{this.props.story}</p>
+                </div>
             </div>
         )
     }
