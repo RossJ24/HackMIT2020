@@ -8,6 +8,8 @@ import Board from './components/Board';
 import CardWrapper from './components/CardWrapper';
 import DriverReaction from './components/DriverBehavior';
 import DriverBehavior from './components/DriverBehavior';
+import Hit from './components/Hit';
+import Story from './components/Story';
 
 class App extends React.Component {
 
@@ -22,6 +24,13 @@ class App extends React.Component {
     }).catch((error) => {
       console.log(error);
     });
+
+    window.addEventListener("keydown", function(e) {
+      // space, page up, page down and arrow keys:
+      if([32, 33, 34, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+          e.preventDefault();
+      }
+  }, false);
   }
 
   render() {
@@ -37,6 +46,7 @@ class App extends React.Component {
             <Narrative story={narrative} />
             <Weather current={weather.weather_text} rain={weather.precipitation_type} />
             <DriverBehavior facingSun = {driver_facing_sun} phoneUse = {prior_phone_use} continuedDriving = {continue_driving} airBag = {airbag_deployed}/>
+            <Hit />
           </Board>
         </div>
       </>);

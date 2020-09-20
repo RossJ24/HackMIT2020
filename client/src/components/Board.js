@@ -29,8 +29,7 @@ const getOrder = ({ index, pos, numItems }) => {
             {React.Children.map(props.children, (child, index) => (
               <Slot
                 key={index}
-                order={getOrder({ index: index, pos: state.pos, numItems })}
-              >
+                order={getOrder({ index: index, pos: state.pos, numItems })}>
                 {child}
               </Slot>
             ))}

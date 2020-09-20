@@ -53,6 +53,7 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
     "react-swipeable": "^5.5.1",
+    "react-visibility-sensor": "^5.1.1",
     "resolve": "1.15.0",
     "resolve-url-loader": "3.1.1",
     "sass-loader": "8.0.2",

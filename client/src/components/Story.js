@@ -18,13 +18,13 @@ function getDistanceFromLatLonInKm(lat1,lon1,lat2,lon2) {
     return deg * (Math.PI/180)
   }
 
-class Distance extends React.Component {
+class Story extends React.Component {
     render() {
       let lat1 ;
       let lon1 ;
       let lat2 ;
       let lon2 ;
-      distance_traveled = getDistanceFromLatLonInKm(lat1, lon1, lat2, lon2)
+      let distance_traveled = getDistanceFromLatLonInKm(lat1, lon1, lat2, lon2)
       return(
           <div class="card">
               <div class = "card-body">
@@ -37,3 +37,5 @@ class Distance extends React.Component {
       );
   }
 }
+
+export default Story;

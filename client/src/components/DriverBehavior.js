@@ -13,9 +13,6 @@ class DriverBehavior extends React.Component {
         if (this.props.phoneUse){
             phoneUse = "Yes"
         }
-        if (this.props.manuever){
-            manuever = "Yes"
-        }
         if (this.props.airBag){
             airBag = "Yes"
         }
