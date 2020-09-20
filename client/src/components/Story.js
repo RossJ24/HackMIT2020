@@ -32,8 +32,8 @@ class Story extends React.Component {
       let duration = timeConversion(date);
       if (this.state.loc) {
         return(
-          <div class="card justify-content-center">
-              <div class = "card-body">
+          <div class="card">
+              <div class = "card-body justify-content-center">
                 <h1 class="display-4">When</h1>
                 <h3>When did the crash occur?</h3>
                 <br></br>

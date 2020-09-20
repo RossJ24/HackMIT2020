@@ -10,11 +10,11 @@ class Weather extends React.Component {
         }
         return (
             <div class = "card justify-content-center">
-                <div class = "card-body">
+                <div class = "card-body justify-content-center">
                     <h1 class="display-4">Weather</h1>
-                    <h3>The weather at this time was</h3>
+                    <h3>The forecast in the area during the crash was</h3>
                     <p>{this.props.current}</p>
-                    <h3>The chances of rain were </h3>
+                    <h3>The chances of rain were</h3>
                     <p>{rain}</p>
                 </div>
             </div>

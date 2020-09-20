@@ -37,4 +37,8 @@ body, html {
   width: 60%;
   
 }
-
+@media (max-width:600px) { 
+  .card-body{
+    width: 100%
+  }
+}

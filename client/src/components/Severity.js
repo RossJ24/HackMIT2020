@@ -6,9 +6,11 @@ class Severity extends React.Component{
 
         return(<>
             <div class = "card justify-content-center">
-                    <div class = "card-body">
+                    <div class = "card-body justify-content-center">
                         <h1 class="display-4">Your severity score was...</h1>
-                        <h3>{this.props.score}</h3>
+                        <br></br>
+                        <br></br>
+                        <h2>{this.props.score}</h2>
                     </div>
                 </div>
          

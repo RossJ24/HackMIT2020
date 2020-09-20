@@ -21,7 +21,7 @@ class DriverBehavior extends React.Component {
         }
         return (
             <div class = "card justify-content-center">
-                <div class = "card-body">
+                <div class = "card-body justify-content-center">
                     <h1 class="display-4">Driver Behavior</h1>
                     <h3>Was driver facing the sun?</h3>
                     <p>{facingSun}</p>
