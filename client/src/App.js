@@ -8,7 +8,6 @@ import Board from './components/Board';
 import DriverBehavior from './components/DriverBehavior';
 import Hit from './components/Hit';
 import Story from './components/Story';
-import Story from "./components/Story"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends React.Component {

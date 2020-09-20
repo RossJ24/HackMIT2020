@@ -16,7 +16,8 @@ class Hit extends React.Component {
                     if (isVisible) {
                         anime({
                             targets: '.car-rep',
-                            translateX: 250
+                            translateX: 250,
+                            loop: true
                         });
                     }
                 }}>
