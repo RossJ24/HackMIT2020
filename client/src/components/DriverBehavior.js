@@ -8,18 +8,21 @@ class DriverBehavior extends React.Component {
         let continuedDriving = "No";
         let airBag = "No";
         if (this.props.facingSun){
-            facingSun = "Yes"
+            facingSun = "Yes";
         }
         if (this.props.phoneUse){
-            phoneUse = "Yes"
+            phoneUse = "Yes";
+        }
+        if (this.props.continuedDriving){
+            continuedDriving = "Yes";
         }
         if (this.props.airBag){
-            airBag = "Yes"
+            airBag = "Yes";
         }
         return (
             <div class = "card">
                 <div class = "card-body">
-                    <h2>Driver Behavior</h2>
+                    <h1 class="display-4">Driver Behavior</h1>
                     <p>Was driver facing the sun?</p>
                     <p>{facingSun}</p>
                     <p>Was driver using the phone prior?</p>
