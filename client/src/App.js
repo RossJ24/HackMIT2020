@@ -35,17 +35,16 @@ class App extends React.Component {
   render() {
 
     if (this.state.data) {
-      const { severity, weather, narrative, start_time, end_time, coords, driver_facing_sun, prior_phone_use, continue_driving, airbag_deployed} = this.state.data;
+      const { severity, weather, narrative, start_time, end_time, coords, driver_facing_sun, prior_phone_use, continue_driving, airbag_deployed, hit_direction} = this.state.data;
       return (<>
         <div className="App">
           <Board>
             <Severity score={severity} />
-            <Narrative story={narrative} />
             <Story startPoint = {coords[0]} endPoint = {coords[40]} startTime={start_time} endTime = {end_time}/>
-            <Narrative story={narrative} />
             <Weather current={weather.weather_text} rain={weather.precipitation_type} />
             <DriverBehavior facingSun = {driver_facing_sun} phoneUse = {prior_phone_use} continuedDriving = {continue_driving} airBag = {airbag_deployed}/>
-            <Hit />
+            <Hit direction={hit_direction} />
+            <Narrative story={narrative} />
           </Board>
         </div>
       </>);
