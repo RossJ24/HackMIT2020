@@ -1,12 +1,15 @@
 import React from 'react';
 import './App.css';
 import axios from 'axios';
+import Swipeable from 'react-swipeable';
 import Severity from './components/Severity';
+import Narrative from './components/Narrative';
+import Weather from './components/Weather';
 
 class App extends React.Component {
 
   state = {
-    data: {}
+    data: null
   }
 
   componentDidMount() {
@@ -19,12 +22,16 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state.data);
-    return (
-      <div className="App">
-        <Severity score= {this.state.data.severity} />
-      </div>
-    );
+    if (this.state.data) {
+      const {severity, weather, narrative} = this.state.data;
+      console.log(weather);
+      return (<>
+        <div className="App">
+            <Severity score= {severity} />
+            <Narrative story= {narrative} />
+        </div>
+      </>);
+    }
   }
 }
 
