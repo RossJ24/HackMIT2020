@@ -20,16 +20,16 @@ class DriverBehavior extends React.Component {
             airBag = "Yes";
         }
         return (
-            <div class = "card">
+            <div class = "card justify-content-center">
                 <div class = "card-body">
                     <h1 class="display-4">Driver Behavior</h1>
-                    <p>Was driver facing the sun?</p>
+                    <h3>Was driver facing the sun?</h3>
                     <p>{facingSun}</p>
-                    <p>Was driver using the phone prior?</p>
+                    <h3>Was driver using the phone prior?</h3>
                     <p>{phoneUse}</p>
-                    <p>Did the driver continue driving after crash occurred?</p>
+                    <h3>Did the driver continue driving after crash occurred?</h3>
                     <p>{continuedDriving}</p>
-                    <p>Did the airbag deploy after crash occurred?</p>
+                    <h3>Did the airbag deploy after crash occurred?</h3>
                     <p>{airBag}</p>
                 </div>
             </div>
