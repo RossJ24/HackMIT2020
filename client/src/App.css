@@ -48,6 +48,20 @@
 }
 
 .card {
-  padding: 20px;
-  background-color: darkslategrey;
+  background-color: white;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+
 }
+
+.card-body{
+
+  width: 60%;
+  
+}
+

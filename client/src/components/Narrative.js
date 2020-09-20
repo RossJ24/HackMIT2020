@@ -4,8 +4,9 @@ class Narrative extends React.Component {
     
     render() {
         return (
-            <div>
-                <div>
+            <div class = "card">
+                <div class = "card-body">
+                    <h2>What Happened?</h2>
                     <p>{this.props.story}</p>
                 </div>
             </div>

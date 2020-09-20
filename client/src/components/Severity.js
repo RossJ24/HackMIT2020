@@ -7,7 +7,7 @@ class Severity extends React.Component{
 
             function rotateDial(){
                 var deg = 0;
-                var value = Math.round(this.props.score);
+                var value = Math.round(83.12);
                 deg = (value * 177.5) / 100;
                 gauge_value.html(value);
 
@@ -25,34 +25,15 @@ class Severity extends React.Component{
         return(<>
             <div class = "card">
                     <div class = "card-body">
-                    <h2>Your calculated severity score was...</h2>
-                    <div>
-                        <h1>{this.props.score}</h1>
-                    </div>
-                    <div class="gauge">
-                    <ul class="meter">
-                        <li class="low"></li>
-                        <li class="normal"></li>
-                        <li class="high"></li>
-                    </ul>
-
-                    <div class="dial">
-                            <div class="inner">
-                                <div class="arrow">
-                                </div>
-                            </div>
-                    </div>
-
-                    <div class="value">
-                        0%
-                    </div>
-
+                        <h2>Your calculated severity score was...</h2>
+                        <h1 id="severity">{this.props.score}</h1>
                     </div>
                 </div>
-            </div>
+         
 
         </>);
     }
 }
+
 
 export default Severity;

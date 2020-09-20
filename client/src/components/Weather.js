@@ -4,9 +4,13 @@ class Weather extends React.Component {
     
     render() {
         return (
-            <div>
-                <p>The weather was</p>
-                <h1>{this.props.obsTime}</h1>
+            <div class = "card">
+                <div class = "card-body">
+                    <h2>The weather at this time was</h2>
+                    <h1>{this.props.current}</h1>
+                    <p>The chances of rain were </p>
+                    <h3>{this.props.rain}</h3>
+                </div>
             </div>
         )
     }
